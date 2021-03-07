@@ -1,0 +1,281 @@
+html
+{
+	overflow-y: hidden;
+}
+body
+{
+	color: white;
+	background-color: #38a2ad;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	
+}
+.jumbotron
+{
+	background-image: url("../img/logo_bg_s.png");
+	background-size: cover;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+h1
+{
+	font-size: 86px;
+	color: #1f5a61;
+	font-weight: 500;
+	text-shadow:3px 3px 0px #ebf8f9,
+                0px 14px 10px rgba(0,0,0,0.15),
+                6px 24px 2px rgba(0,0,0,0.1),
+                24px 34px 30px rgba(0,0,0,0.2);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 17.5px;
+	padding-bottom: 17.5px;
+}
+.container
+{
+	margin-left:0px;
+	margin-right:0px;
+	padding-left:0px;
+	padding-right:0px;
+	margin-top: 0px;
+	/* min-width: 100%; */
+	/* max-width: calc(100vw - 200px); */
+	min-height: calc(100vh - 140px);
+	position: relative;
+}
+
+.sidenav 
+{
+	height: calc(100vh - 140px);
+	width: 200px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.2);
+	overflow-x: hidden;
+	padding-top: 20px;
+  
+}
+.role
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 15px 6px 35px  15px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #ffffff;
+	display: block;	
+	background-color: #22808a;
+	text-shadow: 0px 2px 2px rgba(255,255,255,0.4);
+	box-shadow: 0 0 10px #33a4b0;
+}
+#roleName
+{
+	font-size: 16px;
+	float: left;
+	margin-left: 10px;	
+}
+.navA
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 14.5px 6px 14.5px  15px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 25px;
+	position: relative;
+	width: 190px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.navA:hover 
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #38a2ad;
+	text-shadow: 0px 2px 2px rgba(255,255,255,0.4);
+	box-shadow: 0 0 10px #33a4b0;
+}
+
+.dropdownContent 
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	display: none;
+}
+
+.dropdownContent a 
+{
+	padding: 13px 6px 13px  40px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #ffffff;
+	display: block;
+	line-height: 18px;
+	position: relative;
+}
+.dropdownContent a:hover 
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #48b2bd;
+	text-shadow: 0px 2px 2px rgba(255,255,255,0.4);
+	box-shadow: 0 0 10px #33a4b0;
+}
+
+
+.navLogOut
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	position: absolute; 
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 15px 10px  12px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+	display: block;
+}
+
+.navLogOut:hover 
+{
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #38a2ad;
+	text-shadow: 0px 2px 2px rgba(255,255,255,0.4);
+	box-shadow: 0 0 10px #33a4b0;
+}
+
+#contentBox
+{
+	margin-left: 200px;
+	margin-right: 0;
+	padding: 80px 60px 60px 120px;
+	padding-right: 150px;
+	position: absolute;
+	height: 100%;
+	width: calc(100vw - 210px);
+	overflow-y: auto;
+}
+#c0
+{
+	display: block;
+}
+#c1
+{
+	display: none;
+}
+
+.bubbles 
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+}
+.bubbles li
+{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,.2);
+    animation: animate 25s linear infinite;
+    bottom: -200px;
+}
+.bubble li:nth-child(1)
+{
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.bubbles li:nth-child(2)
+{
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.bubbles li:nth-child(3)
+{
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.bubbles li:nth-child(4)
+{
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.bubbles li:nth-child(5)
+{
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.bubbles li:nth-child(6)
+{
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.bubbles li:nth-child(7)
+{
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.bubbles li:nth-child(8)
+{
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.bubbles li:nth-child(9)
+{
+    left: 20%;
+    width: 12px;
+    height: 12px;
+    animation-delay: 2s;
+    animation-duration: 34s;
+}
+.bubbles li:nth-child(10)
+{
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+@keyframes animate
+{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-800px) rotate(720deg);
+        opacity: 0.3;
+        border-radius: 40%;
+    }
+}
