@@ -1,8 +1,8 @@
 <?php
 $hostname = "localhost";
-$dbname = "u8rolka";
-$username = "u8rolka";
-$pass = "8rolka";
+$dbname = "dbname";         // changed in orginal project
+$username = "username";     // changed in orginal project
+$pass = "pass";             // changed in orginal project
 
 // Create connection
 $db_conn = pg_connect(" host = $hostname dbname = $dbname user = $username password = $pass ");

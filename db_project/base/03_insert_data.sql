@@ -9,13 +9,6 @@ INSERT INTO hurtownia.Uprawnienia VALUES(DEFAULT,'magazynier','Obsługuje przydz
 
 
 
--- dodanie do bazy pierwszego kierownika (będzie mógł zatrudnić (dodać do bazy) resztę pracowników: kierowników, magazynierów)
-
-SELECT dodajPracownika('kierownik','2020-12-01',null,'Aleksandra','Rolka','arolka@hurt.com','731552440','Wroclawska','168','30-149','Kraków','aleksandra9898','rolka983');
-
-
-
-
 
 ---------------------------------------------------------------------- wypełnienie dla przykładu ----------------------------------------------------------------------
 
@@ -25,8 +18,10 @@ SELECT dodajMagazyn(false,'Lwowska','54','33-300','Nowy Sącz');
 SELECT dodajMagazyn(false,'Wielopole','64','33-300','Nowy Sącz');
 
 
+-- dodanie do bazy pierwszego kierownika (będzie mógł zatrudnić (dodać do bazy) resztę pracowników: kierowników, magazynierów)
 
 SELECT dodajPracownika('kierownik','2020-12-01',null,'Aleksandra','Rolka','arolka@hurt.com','731552440','Wroclawska','168','30-149','Kraków','aleksandra980198','rolka090183');
+
 SELECT dodajPracownika('magazynier','2020-12-12',1,'Marcin','Wierzbicki','mwierzbicki@op.pl','712687321','Armii Krajowej','8','30-149','Kraków','marcinw9098','wierzba9');
 SELECT dodajPracownika('magazynier','2021-01-14',2,'Krzysztof','Krzak','kkrzak@gmail.com','772978234','Jamnicka','67','32-987','Kraków','kkrzak145','k123krzak4');
 SELECT dodajPracownika('magazynier','2021-01-14',3,'Joanna','Mazur','jmazur@interia.com','547823674','Heleny','112','32-987','Kraków','jmazur234','mazurekj212'); 
